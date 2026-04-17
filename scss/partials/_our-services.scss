@@ -1,0 +1,41 @@
+$odd-background: $pink-light;
+$even-background: $white-gray;
+.our-services {
+  padding: 30px 0;
+  .title-line {
+    @include title-line(4.6rem);
+  }
+  .row {
+    background-color: $even-background;
+    &:nth-of-type(odd) {
+      background-color: $odd-background;
+    } //kontra mi je tajp, ne znam zasto?
+  }
+  .our-services-info {
+    @media (min-width: 992px) {
+      text-align: left !important;
+    }
+    .our-services-info-title {
+      margin-bottom: 4.2rem;
+    }
+    .our-services-info-link {
+      font-size: 1.4rem;
+      line-height: 24px;
+      letter-spacing: 10%;
+      padding: 15px 30px;
+    }
+  }
+
+  .our-services-image {
+    display: block;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

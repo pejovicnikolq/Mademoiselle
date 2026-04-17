@@ -1,6 +1,11 @@
-@import "./partials/_overide-bootstrap";
+@import "./partials/overide-bootstrap";
 @import "../bootstrap/scss/bootstrap.scss";
+@import "./partials/functions";
 
-@import "./partials/_fonts.scss";
-@import "./partials/_animations.scss";
-@import "./partials/_base.scss";
+@import "./partials/fonts";
+@import "./partials/animations";
+@import "./partials/base";
+@import "./partials/header";
+@import "./partials/hero";
+@import "./partials/news";
+@import "./partials/our-services";

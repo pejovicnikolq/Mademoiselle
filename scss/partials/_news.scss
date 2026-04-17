@@ -1,0 +1,56 @@
+$title-line-color: $pink-light;
+$date-font: $playfair;
+$font-color: $black;
+.news {
+  padding: 67px 0;
+  .news-title {
+    letter-spacing: 10%;
+    color: $black;
+  }
+  .title-line {
+    @include title-line(4.1rem);
+  }
+  .news-item {
+    margin-bottom: 120px;
+    .img-wrapper {
+      overflow: hidden;
+      display: block;
+      img {
+        width: 100%;
+        display: block;
+        transition: transform 0.5s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .news-card-link {
+      text-decoration: none;
+    }
+    .news-card {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 50%);
+      width: 85%;
+      padding: 20px;
+      .news-card-date {
+        font-family: $date-font;
+        font-size: 1.4rem;
+        font-style: italic;
+        line-height: 46px;
+        letter-spacing: 10%;
+        color: $black;
+      }
+      .news-card-description {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        letter-spacing: 10%;
+        color: $black;
+        &:hover {
+          color: lighten($color: $black, $amount: 20%);
+        }
+      }
+    }
+  }
+}
