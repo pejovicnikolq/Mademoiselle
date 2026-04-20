@@ -1,0 +1,21 @@
+$border-color: $pink-light;
+
+.prof {
+  padding: 97px 0 66px;
+  .title-line {
+    @include title-line(4.7rem);
+  }
+  .row {
+    @media (min-width: 992px) {
+      padding: 87px 94px !important;
+    }
+    border: 2px solid $pink-light;
+
+    .prof-img {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}

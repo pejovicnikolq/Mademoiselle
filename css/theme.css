@@ -12393,4 +12393,53 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
 }
 .our-services .our-services-image img:hover {
   transform: scale(1.1);
+}
+
+.prof {
+  padding: 97px 0 66px;
+}
+.prof .title-line {
+  width: 8.33%;
+  height: 2px;
+  background-color: rgb(236, 217, 217);
+  margin-top: 2.8rem;
+  margin-bottom: 4.7rem;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+}
+@media (min-width: 992px) {
+  .prof .row {
+    padding: 87px 94px !important;
+  }
+}
+.prof .row {
+  border: 2px solid rgb(236, 217, 217);
+}
+.prof .row .prof-img img {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  padding: 38px 0;
+}
+footer .social-list {
+  list-style: none;
+  margin-bottom: 16px;
+  gap: 3rem;
+  padding-left: 0;
+}
+footer .social-list li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(236, 217, 217);
+}
+footer .social-list li a:hover {
+  color: rgb(208, 182, 182);
+}
+footer .footer-text {
+  font-size: 1.2rem;
+  line-height: 25px;
+  color: rgb(88, 108, 136);
 }/*# sourceMappingURL=theme.css.map */
