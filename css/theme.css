@@ -12289,7 +12289,7 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
 }
 
 .news {
-  padding: 67px 0;
+  padding: 67px 0 0;
 }
 .news .news-title {
   letter-spacing: 10%;
@@ -12350,7 +12350,7 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
 }
 
 .our-services {
-  padding: 30px 0;
+  padding: 97px 0;
 }
 .our-services .title-line {
   width: 8.33%;
@@ -12396,7 +12396,7 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
 }
 
 .prof {
-  padding: 97px 0 66px;
+  padding: 0 0 66px;
 }
 .prof .title-line {
   width: 8.33%;

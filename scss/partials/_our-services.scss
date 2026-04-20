@@ -1,7 +1,8 @@
 $odd-background: $pink-light;
 $even-background: $white-gray;
 .our-services {
-  padding: 30px 0;
+  padding: 97px 0;
+
   .title-line {
     @include title-line(4.6rem);
   }
@@ -9,7 +10,7 @@ $even-background: $white-gray;
     background-color: $even-background;
     &:nth-of-type(odd) {
       background-color: $odd-background;
-    } //kontra mi je tajp, ne znam zasto?
+    } //kontra mi je tajp, zbog title-line-a
   }
   .our-services-info {
     @media (min-width: 992px) {
@@ -39,3 +40,5 @@ $even-background: $white-gray;
     }
   }
 }
+
+//SERVICES
