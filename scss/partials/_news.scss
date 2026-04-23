@@ -12,13 +12,16 @@ $font-color: $black;
   }
   .news-item {
     margin-bottom: 120px;
+    &:nth-of-type(3n) {
+      padding-bottom: 250px;
+    }
     .img-wrapper {
       overflow: hidden;
       display: block;
       img {
         width: 100%;
         display: block;
-        transition: transform 0.5s ease;
+        transition: all 0.5s ease;
         &:hover {
           transform: scale(1.1);
         }
@@ -52,5 +55,12 @@ $font-color: $black;
         }
       }
     }
+  }
+
+  &.news-services {
+    padding-bottom: 118px;
+  }
+  &.blog {
+    padding-bottom: 65px;
   }
 }

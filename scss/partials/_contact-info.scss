@@ -1,0 +1,13 @@
+$info-background: $pink-light;
+$info-font-color: $black;
+.contact-info {
+  padding: 74px 0;
+  background-color: $info-background;
+
+  .contact-info-text {
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: 10%;
+    color: $info-font-color;
+  }
+}

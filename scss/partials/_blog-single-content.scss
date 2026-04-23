@@ -1,0 +1,19 @@
+.blog-single-content {
+  padding-bottom: 195px;
+
+  .blog-single-content-img {
+    display: block;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .blog-single-tag {
+    padding-top: 37px;
+  }
+}

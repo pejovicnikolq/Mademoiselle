@@ -1,0 +1,31 @@
+.about-info {
+  padding: 92px 0 35px;
+
+  .about-box {
+    .about-box-title {
+      margin-bottom: 19px;
+    }
+    .about-box-img {
+      display: block;
+      overflow: hidden;
+
+      margin-bottom: 48px;
+      img {
+        display: block;
+        width: 100%;
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .about-box-search {
+    .news {
+      &.about {
+        padding-top: 38px;
+      }
+    }
+  }
+}

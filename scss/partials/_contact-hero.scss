@@ -1,0 +1,51 @@
+$font-color: $black;
+$input-color: $white-gray;
+$form-shadow: $pink;
+
+.contact-hero {
+  padding: 108px 0 101px;
+  .container {
+    h2 {
+      margin-bottom: 45px;
+      @media (min-width: 992px) and (max-width: 1200px) {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .contact-form {
+      .form-control {
+        margin-bottom: 14px;
+        background-color: $input-color;
+        padding: 10px 20px;
+
+        &::placeholder {
+          font-weight: 300;
+          font-size: 1.4rem;
+          line-height: 28px;
+          color: $font-color;
+        }
+        &:focus {
+          box-shadow: 0 0 0 0.25rem $form-shadow !important;
+          border-color: $input-color !important;
+        }
+      }
+      button {
+        margin-top: 22px;
+        padding: 15px 27px;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 10%;
+      }
+    }
+
+    .contact-img {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
