@@ -58,7 +58,7 @@
                 <a class="nav-link text-uppercase" href="blog.html">blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase" href="contact.html"
+                <a class="nav-link text-uppercase active" href="contact.html"
                   >contact</a
                 >
               </li>
@@ -72,10 +72,18 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-lg-5">
-              <h2 class="text-uppercase fw-500">
+              <h2
+                class="text-uppercase fw-500 animation"
+                data-animation="slide-right"
+              >
                 Please contact us using the form bellow
               </h2>
-              <form action="#" method="POST" class="contact-form">
+              <form
+                action="#"
+                method="POST"
+                class="contact-form animation"
+                data-animation="slide-right"
+              >
                 <input
                   type="text"
                   class="form-control rounded-0"
@@ -120,7 +128,7 @@
               </form>
             </div>
             <div class="col-12 col-lg-6 offset-lg-1">
-              <figure class="contact-img">
+              <figure class="contact-img animation" data-animation="slide-left">
                 <img src="img/contact.png" alt="Map" />
               </figure>
             </div>
@@ -140,7 +148,7 @@
       </section>
     </main>
     <footer class="bg-white">
-      <div class="container text-center">
+      <div class="container text-center animation" data-animation="slide-top">
         <ul
           class="social-list d-flex justify-content-center align-items-center"
         >

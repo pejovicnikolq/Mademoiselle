@@ -1,3 +1,6 @@
+$border-color: $black;
+$search-font: $playfair;
+
 .about-info {
   padding: 92px 0 35px;
 
@@ -22,6 +25,31 @@
   }
 
   .about-box-search {
+    .search-wrapper {
+      border: 1px solid $border-color;
+      .search-input {
+        border: none !important;
+        padding: 15px 20px;
+
+        &::placeholder {
+          font-family: $search-font;
+          font-weight: 500;
+          font-style: italic;
+          font-size: 1.4rem;
+          line-height: 20px;
+          letter-spacing: 10%;
+          color: $font-color;
+        }
+        &:focus {
+          box-shadow: none !important;
+          border-color: none !important;
+        }
+      }
+      .search-btn {
+        padding: 15px;
+        border: none !important;
+      }
+    }
     .news {
       &.about {
         padding-top: 38px;

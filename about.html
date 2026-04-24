@@ -47,7 +47,9 @@
           <div class="collapse navbar-collapse" id="main-menu">
             <ul class="navbar-nav ms-auto py-4 py-lg-0 text-center">
               <li class="nav-item">
-                <a class="nav-link text-uppercase" href="about.html">about</a>
+                <a class="nav-link text-uppercase active" href="about.html"
+                  >about</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="services.html"
@@ -78,7 +80,10 @@
         "
       >
         <div class="container text-center">
-          <h1 class="hero-title about-hero-title fw-medium text-white">
+          <h1
+            class="hero-title about-hero-title fw-medium text-white animation"
+            data-animation="slide-top"
+          >
             About
           </h1>
         </div>
@@ -88,7 +93,10 @@
           <div class="row">
             <div class="col-12 col-lg-8">
               <div class="about-box">
-                <h4 class="about-box-title text-uppercase">
+                <h4
+                  class="about-box-title text-uppercase animation"
+                  data-animation="slide-right"
+                >
                   Addicted to <br />
                   beauty
                 </h4>
@@ -115,7 +123,7 @@
                   sometimes by accident, sometimes on purpose (injected humour
                   and the like)
                 </p>
-                <p>
+                <p class="mb-5 mb-lg-0">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                   The point of using Lorem Ipsum is that it has a more-or-less
@@ -125,14 +133,18 @@
             </div>
             <div class="col-12 col-lg-4">
               <aside class="about-box-search">
-                <form action="/search" method="GET" class="d-flex">
+                <form
+                  action="/search"
+                  method="GET"
+                  class="d-flex search-wrapper"
+                >
                   <input
                     type="search"
                     class="form-control search-input"
                     placeholder="Search"
                     name="q"
                   />
-                  <button type="submit" class="search-btn">
+                  <button type="submit" class="search-btn bg-white">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </form>
@@ -204,7 +216,7 @@
       </section>
     </main>
     <footer class="bg-white">
-      <div class="container text-center">
+      <div class="container text-center animation" data-animation="slide-top">
         <ul
           class="social-list d-flex justify-content-center align-items-center"
         >

@@ -1,3 +1,6 @@
+$label-font: $playfair;
+$label-color: $black;
+
 .blog-single-content {
   padding-bottom: 195px;
 
@@ -15,5 +18,13 @@
   }
   .blog-single-tag {
     padding-top: 37px;
+    .tags-label {
+      font-family: $label-font;
+      font-style: italic;
+      font-size: 1.4rem;
+      line-height: 46px;
+      letter-spacing: 10%;
+      color: $label-color;
+    }
   }
 }

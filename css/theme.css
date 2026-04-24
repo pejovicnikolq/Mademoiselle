@@ -12204,6 +12204,86 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.slide-left {
+  animation: slideLeft 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.slide-right {
+  animation: slideRight 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideTop {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.slide-top {
+  animation: slideTop 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.slide-bottom {
+  animation: slideBottom 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.zoom {
+  animation: zoom 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.animation {
+  position: relative;
+  opacity: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -12270,14 +12350,16 @@ header .navbar-nav .nav-item .nav-link {
   line-height: 100%;
   letter-spacing: 1%;
   padding: 10px 0;
+  border-bottom: 1px solid transparent;
 }
 @media (min-width: 992px) {
   header .navbar-nav .nav-item .nav-link {
     padding: 0;
+    padding-bottom: 4px;
   }
 }
 header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-link.active {
-  color: rgb(208, 182, 182);
+  border-bottom: 1px solid rgb(208, 182, 182);
 }
 
 .hero {
@@ -12573,6 +12655,14 @@ footer .footer-text {
 .blog-single-content .blog-single-tag {
   padding-top: 37px;
 }
+.blog-single-content .blog-single-tag .tags-label {
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 46px;
+  letter-spacing: 10%;
+  color: rgb(0, 0, 0);
+}
 
 .contact-hero {
   padding: 108px 0 101px;
@@ -12651,6 +12741,39 @@ footer .footer-text {
 }
 .about-info .about-box .about-box-img img:hover {
   transform: scale(1.1);
+}
+.about-info .about-box-search .search-wrapper {
+  border: 1px solid rgb(0, 0, 0);
+}
+.about-info .about-box-search .search-wrapper .search-input {
+  border: none !important;
+  padding: 15px 20px;
+}
+.about-info .about-box-search .search-wrapper .search-input::-moz-placeholder {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 20px;
+  letter-spacing: 10%;
+  color: rgb(0, 0, 0);
+}
+.about-info .about-box-search .search-wrapper .search-input::placeholder {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 20px;
+  letter-spacing: 10%;
+  color: rgb(0, 0, 0);
+}
+.about-info .about-box-search .search-wrapper .search-input:focus {
+  box-shadow: none !important;
+  border-color: none !important;
+}
+.about-info .about-box-search .search-wrapper .search-btn {
+  padding: 15px;
+  border: none !important;
 }
 .about-info .about-box-search .news.about {
   padding-top: 38px;
